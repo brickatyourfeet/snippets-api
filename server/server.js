@@ -12,6 +12,8 @@ const { User } = require('./models/user')
 const app = express()
 const port = process.env.PORT
 
+app.use(require('cors')())
+app.disable('x-powered-by')
 app.use(bodyParser.json())
 
 app.post('/snippets', (req, res) => {
