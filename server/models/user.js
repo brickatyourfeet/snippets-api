@@ -3,7 +3,7 @@ const validator = require('validator')
 const jwt = require('jsonwebtoken')
 const _ = require('lodash')
 
-let UserSchema = new mongoose.Schema({
+var UserSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
@@ -33,17 +33,17 @@ let UserSchema = new mongoose.Schema({
 })
 
 UserSchema.methods.toJSON = function() {
-  let user = this
-  let userObject = user.toObject()
+  var user = this
+  var userObject = user.toObject()
 
   return _.pick(userObject, ['_id', 'email'])
 }
 
 //using function keyword because I need the this keyword
 UserSchema.methods.generateAuthToken = function() {
-  let user = this
-  let access = 'auth'
-  let token = jwt.sign({ _id: user._id.toHexString(), access }, 'secretvalue').toString()
+  var user = this
+  var access = 'auth'
+  var token = jwt.sign({ _id: user._id.toHexString(), access }, 'secretvalue').toString()
 
   user.tokens.push({ access, token })
 
@@ -54,8 +54,8 @@ UserSchema.methods.generateAuthToken = function() {
 }
 
 UserSchema.statics.findByToken = function(token) {
-  let User = this
-  let decoded
+  var User = this
+  var decoded
 
   try {
     decoded = jwt.verify(token, 'secretvalue')

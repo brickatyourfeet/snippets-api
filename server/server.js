@@ -5,12 +5,12 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const { ObjectID } = require('mongodb')
 
-const { mongoose } = require('./db/mongoose')
-const { Snippet } = require('./models/snippet')
-const { User } = require('./models/user')
+var { mongoose } = require('./db/mongoose')
+var { Snippet } = require('./models/snippet')
+var { User } = require('./models/user')
 var { authenticate } = require('./middleware/authenticate')
 
-const app = express()
+var app = express()
 const port = process.env.PORT
 
 app.use(require('cors')())
@@ -101,8 +101,8 @@ app.patch('/snippets/:id', (req, res) => {
 
 //post User
 app.post('/users', (req, res) => {
-  let body = _.pick(req.body, ['email', 'password'])
-  let user = new User(body)
+  var body = _.pick(req.body, ['email', 'password'])
+  var user = new User(body)
 
 
   //save saves to the db
