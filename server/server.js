@@ -98,6 +98,17 @@ app.patch('/snippets/:id', (req, res) => {
   })
 })
 
+//post User
+app.post('/users', (req, res) => {
+  let body = _.pick(req.body, ['email', 'password'])
+  let user = new User(body)
+  //save saves to the db
+  user.save().then((user) => {
+    res.send(user)
+  }).catch((e) => {
+    res.status(400).send(e)
+  })
+})
 
 app.listen(port, () => {
   console.log(`running at port ${port}`)
