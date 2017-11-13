@@ -17,10 +17,9 @@ app.use(require('cors')())
 app.disable('x-powered-by')
 app.use(bodyParser.json())
 
-app.post('/snippets', authenticate, (req, res) => {
+app.post('/snippets', (req, res) => {
   let snippet = new Snippet({
-    text: req.body.text,
-    _createdBy: req.user._id
+    text: req.body.text
   })
 
   snippet.save().then((doc) => {
@@ -29,6 +28,20 @@ app.post('/snippets', authenticate, (req, res) => {
     res.status(400).send(e)
   })
 })
+
+/////PRIVATE POST with id
+// app.post('/snippets', authenticate, (req, res) => {
+//   let snippet = new Snippet({
+//     text: req.body.text,
+//     _createdBy: req.user._id
+//   })
+//
+//   snippet.save().then((doc) => {
+//     res.send(doc)
+//   }, (e) => {
+//     res.status(400).send(e)
+//   })
+// })
 
 app.get('/snippets', (req, res) => {
   Snippet.find().then((snippets) => {

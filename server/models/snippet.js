@@ -16,8 +16,7 @@ let Snippet = mongoose.model('Snippet', {
     default: null
   },
   _createdBy: {
-    type: mongoose.Schema.Types.ObjectId,
-    required: true
+    type: mongoose.Schema.Types.ObjectId
   }
 })
 
