@@ -17,17 +17,23 @@ const users = [{
 }, {
   _id: exampleUserTwo,
   email: 'example2@othermail.com',
-  password: 'examPass2'
+  password: 'examPass2',
+  tokens: [{
+    access: 'auth',
+    token: jwt.sign({ _id: exampleUserTwo, access: 'auth' }, 'secretvalue').toString()
+  }]
 }]
 
 const snippets = [{
   _id: new ObjectID(),
-  text: 'test snippet'
+  text: 'test snippet',
+  _createdBy: exampleUserOne
 }, {
   _id: new ObjectID(),
   text: 'a second test snippet',
   completed: true,
-  completedAt: 123456
+  completedAt: 123456,
+  _createdBy: exampleUserTwo
 }]
 
 const populateSnippets = (done) => {

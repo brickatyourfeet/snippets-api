@@ -14,6 +14,10 @@ let Snippet = mongoose.model('Snippet', {
   completedAt: {
     type: Number,
     default: null
+  },
+  _createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true
   }
 })
 
