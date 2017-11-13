@@ -73,6 +73,8 @@ app.delete('/snippets/:id', (req, res) => {
 })
 
 app.patch('/snippets/:id', (req, res) => {
+  console.log("patch snippets/:id: the request is: " + req);
+
   let id = req.params.id
   //using lodash pick to only let valid props be updated
   let body = _.pick(req.body, ['text', 'completed'])
@@ -88,11 +90,12 @@ app.patch('/snippets/:id', (req, res) => {
     body.completedAt = null
   }
 
+  console.log("patch snippets/:id: calling mongo...");
   Snippet.findByIdAndUpdate(id, { $set: body }, { new: true }).then((snippet) => {
     if (!snippet) {
       return res.status(400).send()
     }
-
+    console.log("patch snippets/:id: 200, returning with: " + snippet);
     res.send({ snippet })
   }).catch((e) => {
     res.status(400).send()
@@ -119,6 +122,21 @@ app.post('/users', (req, res) => {
 app.get('/users/me', authenticate, (req, res) => {
   res.send(req.user)
 })
+
+
+//post users/login {email, password}
+app.post('/users/login', (req, res) => {
+  var body = _.pick(req.body, ['email', 'password'])
+
+  User.findByCredentials(body.email, body.password).then((user) => {
+    user.generateAuthToken().then((token) => {
+      res.header('x-auth', token).send(user)
+    })
+  }).catch((e) => {
+    res.status(400).send()
+  })
+})
+
 
 app.listen(port, () => {
   console.log(`running at port ${port}`)
