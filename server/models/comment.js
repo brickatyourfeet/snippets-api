@@ -7,11 +7,12 @@ let Comment = mongoose.model('Comment', {
     required: true,
     minlength: 1,
     trim: true
-  },
-  snippet_id: {
-    type: String,
-    required: true
-  },
+  }
+  // ,
+  // snippet_id: {
+  //   type: String,
+  //   required: true
+  // }
 
 })
 

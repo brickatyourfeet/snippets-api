@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const { Comment } = require('./comment')
 
 let Snippet = mongoose.model('Snippet', {
   text: {
@@ -9,7 +10,7 @@ let Snippet = mongoose.model('Snippet', {
   },
   code: {
     type: String,
-    // required: true,
+    required: true,
     minlength: 1,
     trim: true
   },
@@ -17,9 +18,7 @@ let Snippet = mongoose.model('Snippet', {
     type: Boolean,
     default: false
   },
-  comments: [{
-    text: String
-  }],
+  comments: [Comment],
   completedAt: {
     type: Number,
     default: null

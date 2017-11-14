@@ -19,7 +19,8 @@ app.use(bodyParser.json())
 
 app.post('/snippets', (req, res) => {
   let snippet = new Snippet({
-    text: req.body.text
+    text: req.body.text,
+    code: req.body.code
   })
 
   snippet.save().then((doc) => {
