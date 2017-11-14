@@ -24,3 +24,6 @@ let Archive = mongoose.model('Archive', {
 })
 
 module.exports = { Archive }
+
+
+///////make archive just text content instead pulled from snippet?
