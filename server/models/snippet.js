@@ -9,7 +9,7 @@ let Snippet = mongoose.model('Snippet', {
   },
   code: {
     type: String,
-    required: true,
+    // required: true,
     minlength: 1,
     trim: true
   },
