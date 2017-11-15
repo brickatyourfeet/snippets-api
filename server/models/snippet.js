@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 const { Comment } = require('./comment')
 
+//var Comment = new mongoose.Schema({ commentBody: String })
+
+
 let Snippet = mongoose.model('Snippet', {
   text: {
     type: String,

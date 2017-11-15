@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-let Comment = mongoose.model('Comment', {
+var Comment = new mongoose.Schema({
   commentBody: {
     type: String,
     // required: true,
@@ -18,7 +18,8 @@ let Comment = mongoose.model('Comment', {
   //   ref: 'users'
   // }
 
-
 })
+
+//var Comment = mongoose.model('Comment', CommentSchema)
 
 module.exports = { Comment }
