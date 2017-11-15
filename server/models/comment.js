@@ -2,17 +2,22 @@ const mongoose = require('mongoose')
 
 
 let Comment = mongoose.model('Comment', {
-  text: {
+  commentBody: {
     type: String,
-    required: true,
+    // required: true,
     minlength: 1,
     trim: true
   }
-  // ,
-  // snippet_id: {
-  //   type: String,
-  //   required: true
+  //,
+  // commentDate: {
+  //   type: Date,
+  //   default: Date.now
+  // },
+  // commentUser: {
+  //   type: Schema.types.ObjectId,
+  //   ref: 'users'
   // }
+
 
 })
 
