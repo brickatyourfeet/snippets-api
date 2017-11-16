@@ -82,7 +82,7 @@ app.get('/snippets/:id', (req, res) => {
   })
 })
 
-///////PRIVATE GET POST BY ID route
+///////PRIVATE GET snip BY ID route
 // app.get('/snippets/:id', authenticate, (req, res) => {
 //   let id = req.params.id
 //
@@ -124,12 +124,12 @@ app.delete('/snippets/:id', authenticate, (req, res) => {
   })
 })
 
-app.patch('/snippets/:id', authenticate, (req, res) => {
+app.patch('/snippets/:id', (req, res) => {
   console.log("patch snippets/:id: the request is: " + req);
 
   let id = req.params.id
   //using lodash pick to only let valid props be updated
-  let body = _.pick(req.body, ['text', 'completed'])
+  let body = _.pick(req.body, ['text', 'completed', 'comments'])
 
   if (!ObjectID.isValid(id)) {
     return res.status(404).send()
