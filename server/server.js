@@ -143,7 +143,7 @@ app.patch('/snippets/:id', (req, res) => {
   }
 
   console.log("patch snippets/:id: calling mongo...");
-  Snippet.findOneAndUpdate({ _id: id, _createdBy: req.user._id }, { $set: body }, { new: true }).then((snippet) => {
+  Snippet.findOneAndUpdate({ _id: id }, { $set: body }, { new: true }).then((snippet) => {
     if (!snippet) {
       return res.status(400).send()
     }
