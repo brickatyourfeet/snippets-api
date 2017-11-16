@@ -13,9 +13,9 @@ let Snippet = mongoose.model('Snippet', {
   },
   code: {
     type: String,
-    required: true,
-    minlength: 1,
-    trim: true
+    required: true
+    //minlength: 1,
+    //trim: true
   },
   completed: {
     type: Boolean,
