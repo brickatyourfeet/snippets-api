@@ -10,7 +10,7 @@
   - Edit a review
 
 
-- **Tech: **
+- **Tech:**
   - Mongo DB
   - Mongoose
   - Javascript
