@@ -1,0 +1,392 @@
+{
+	"id": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+	"name": "Snippets App",
+	"description": "",
+	"order": [
+		"cb5575db-83a9-2c05-99ed-3e7cc9647ad0",
+		"45d3c822-2793-5200-871f-9e3888fe39cf",
+		"5d2e9f5a-e14c-6c3e-fb8f-3ca4c699cba7",
+		"c937dfbc-94d1-83f9-2dfd-bf395f308425",
+		"d45716e7-8caa-3dd0-d8cd-64cb73d9bac6",
+		"2a35cd13-8d13-2513-680f-e888eb13ffd2",
+		"44c202e9-9fe1-1fa8-bac2-bf93c5881064",
+		"126023dd-b3b2-f9cf-4e90-17f6c74c7c7b",
+		"eeb50aa8-562a-93da-491f-6df7fad85bf1",
+		"0febfda7-ac55-9c4b-beac-f584907f09cf",
+		"31141b29-43dd-1aaa-c78a-5982c1a86b25",
+		"f7a6ddac-cb08-dd83-5cef-95dee15d5b9d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1510366674719,
+	"owner": "3075448",
+	"public": false,
+	"requests": [
+		{
+			"id": "0febfda7-ac55-9c4b-beac-f584907f09cf",
+			"headers": "x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhMTJiOWIwZjk5MDgwMzgwOTU3NTQiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjA5NTk0fQ.h2uRTXzig32zFAa1IVX9dCPvuajtfABQq6dumzWtAWY\n",
+			"headerData": [
+				{
+					"key": "x-auth",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhMTJiOWIwZjk5MDgwMzgwOTU3NTQiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjA5NTk0fQ.h2uRTXzig32zFAa1IVX9dCPvuajtfABQq6dumzWtAWY",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users/me/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": null,
+			"dataMode": "params",
+			"name": "DEL users/me/token local",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510609887621,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "126023dd-b3b2-f9cf-4e90-17f6c74c7c7b",
+			"headers": "",
+			"headerData": [],
+			"url": "https://blooming-tundra-73705.herokuapp.com/snippets/5a027e91482a721200ee09e3",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://blooming-tundra-73705.herokuapp.com/snippets/5a027e91482a721200ee09e3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510523686927,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2a35cd13-8d13-2513-680f-e888eb13ffd2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510607143340,
+			"name": "local POST user",
+			"description": "",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"fake100@smoke.com\",\n\t\"password\": \"password12\"\n}"
+		},
+		{
+			"id": "31141b29-43dd-1aaa-c78a-5982c1a86b25",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://blooming-tundra-73705.herokuapp.com/snippets",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510786556967,
+			"name": "https://blooming-tundra-73705.herokuapp.com/snippets",
+			"description": "",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"responses": [],
+			"rawModeData": "{\n\t\"text\": \"Quisque pel Quisque pel Quisque pel Lorem lectus. Aenean id nisi sit amet nibh mollis porta. Nunc eu nibh tincidunt, rutrum tortor at, semper velit. Quisque pell\",\n\t\"code\": \"PUBLIC STATIC STRING user> (type 'a) clojure.lang.Symbol user> (type 'b) clojure.lang.Symbol user> (type 'my-cool-function) clojure.lang.Symbol user> (type 'nyncat) clojure.lang.Symbol RETURN NO\",\n\t\"comments\": [{\"commentBody\": \"this is a comment\"}]\n}\n\n"
+		},
+		{
+			"id": "44c202e9-9fe1-1fa8-bac2-bf93c5881064",
+			"headers": "x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTA4OWIxMGUzMTdmOGU5MjE1ODkzN2MiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNTEzNDI0fQ.YXYAzS_gsIkaZkmCgtmsWVwI254QQ3TOzladQa_w6Do\n",
+			"headerData": [
+				{
+					"key": "x-auth",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTA4OWIxMGUzMTdmOGU5MjE1ODkzN2MiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNTEzNDI0fQ.YXYAzS_gsIkaZkmCgtmsWVwI254QQ3TOzladQa_w6Do",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users/me",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": null,
+			"dataMode": "params",
+			"name": "local GET users me",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510513544708,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "45d3c822-2793-5200-871f-9e3888fe39cf",
+			"headers": "x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhNGQ2NDIzMzcyNjE0MDBmNjgxY2MiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjI0NjEyfQ.dRv1iCVPu3prUB_7Mp4nKBRRCajRAVGfFPgZQ0ByEHU\n",
+			"headerData": [
+				{
+					"key": "x-auth",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhNGQ2NDIzMzcyNjE0MDBmNjgxY2MiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjI0NjEyfQ.dRv1iCVPu3prUB_7Mp4nKBRRCajRAVGfFPgZQ0ByEHU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://blooming-tundra-73705.herokuapp.com/users/me",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510624688951,
+			"name": "me wuth x auth",
+			"description": "",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"responses": []
+		},
+		{
+			"id": "5d2e9f5a-e14c-6c3e-fb8f-3ca4c699cba7",
+			"headers": "//x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTA2NmY5ZWViMDNmODEyMDAzMTRmOTEiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwMzcxMjMwfQ.eXxwaiW5ZstoNMN4438NHzVd8dR6Xoduo_THRAC57Jk\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "x-auth",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTA2NmY5ZWViMDNmODEyMDAzMTRmOTEiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwMzcxMjMwfQ.eXxwaiW5ZstoNMN4438NHzVd8dR6Xoduo_THRAC57Jk",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/snippets",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510858828428,
+			"name": "POST snippet",
+			"description": "",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"responses": [],
+			"rawModeData": "{\n\t\"text\": \"i needs help zomgz?\",\n\t\"code\": \"function something() {blergaderg.this = something}\",\n\t\"comments\": [\"one\", \"two\"]\n}"
+		},
+		{
+			"id": "c937dfbc-94d1-83f9-2dfd-bf395f308425",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/snippets",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": [],
+			"dataMode": "raw",
+			"name": "local GET snips",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510512474601,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"text\": \"other text sending to the local\"\n}"
+		},
+		{
+			"id": "cb5575db-83a9-2c05-99ed-3e7cc9647ad0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://blooming-tundra-73705.herokuapp.com/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": [],
+			"dataMode": "raw",
+			"name": "https://blooming-tundra-73705.herokuapp.com/users",
+			"description": "snippets api",
+			"descriptionFormat": "html",
+			"time": 1510366678502,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\": \"myemail@excite.com\",\n\t\"password\": \"yourexgf15\"\n}"
+		},
+		{
+			"id": "d45716e7-8caa-3dd0-d8cd-64cb73d9bac6",
+			"headers": "Content-Type: application/json\n//x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhMjY1NTc1MjYxOGQ3M2QxN2QyNmMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjE0NjEzfQ.9wPzXO7QgG3T5nP9nAYMEa7dNl7VkEt96qtw5hQQ_M4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-auth",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YTBhMjY1NTc1MjYxOGQ3M2QxN2QyNmMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTEwNjE0NjEzfQ.9wPzXO7QgG3T5nP9nAYMEa7dNl7VkEt96qtw5hQQ_M4",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:3000/snippets",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510858833932,
+			"name": "local POST snips",
+			"description": "",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"responses": [],
+			"rawModeData": "{\n\t\"text\": \"TAKE 3 Quisque pel Quisque pel Quisque pel Lorem lectus. Aenean id nisi sit amet nibh mollis porta. Nunc eu nibh tincidunt, rutrum tortor at, semper velit. Quisque pell\",\n\t\"code\": \"TAKE 3 PUBLIC STATIC STRING user> (type 'a) clojure.lang.Symbol user> (type 'b) clojure.lang.Symbol user> (type 'my-cool-function) clojure.lang.Symbol user> (type 'nyncat) clojure.lang.Symbol RETURN NO\",\n\t\"comments\": [\"commentBody\": {\"string by itself\"}]\n\n}\n"
+		},
+		{
+			"id": "eeb50aa8-562a-93da-491f-6df7fad85bf1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": [],
+			"dataMode": "raw",
+			"name": "local login user POST",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510607301150,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\": \"fake100@smoke.com\",\n\t\"password\": \"password12\"\n}"
+		},
+		{
+			"id": "f7a6ddac-cb08-dd83-5cef-95dee15d5b9d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://blooming-tundra-73705.herokuapp.com/snippets/5a0de075a3e3d41400655f9e",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "7ccce6e5-f7b2-fca4-ec2e-04b62426f412",
+			"data": [],
+			"dataMode": "raw",
+			"name": "PATCH with just comment",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510860046359,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"comments\": [{\"commentBody\": \"update just with a comment??????\" }]\n}"
+		}
+	]
+}
