@@ -8,6 +8,9 @@
   - Post a code snippet
   - Add a review
   - Edit a review
+  
+***
+***
 
 
 - **Tech:**
@@ -15,6 +18,9 @@
   - Mongoose
   - Javascript
   - JWTs and bCrypt
+  
+  ***
+  ***
   
  Postman routes included in JSON file.
   
